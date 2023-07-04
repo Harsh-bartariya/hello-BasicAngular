@@ -1,1 +1,20 @@
 <h2 style="background-color: paleturquoise;">test works!</h2>
+<p style="color: blueviolet;">It's {{name}}</p>
+<!--aise curly bracks ke andar print krane ko interpolation bolte hai
+its a simplest way to bind data from class to template-->
+<p> {{2+2}}</p>
+<p> {{"so its me concatenated" + name}}</p> <!--yha pe 4 or string concatenated hoke print ho jayegi
+   kyuki bracks ke andar h mtlb type script chlega-->
+   <p>{{name.length}}</p>
+   <p>{{name.toUpperCase()}}</p> <!--we can use function and array thing as well-->
+   <h5>{{greetUser}}</h5><!--yha pr funtion wala bracket nhi hai islie ye yha pr poori ramayan print ho gyi-->
+   <h5>{{greetUser()}}</h5><!--function bhi print kra skte h-->
+   <!--Limitations-->
+
+   <!-- <h6>{{a = 2+2}}</h6> | Parser Error: Bindings cannot contain assignments
+assignment possible nhi hai-->
+
+<!--  <p>{{window.location.href}}</p> -->
+<!-- ek or limitation ye hai ki global variable such as window or screen etc ye sb use nhi kr skte
+but if u want to use it to ts file me declare kr lo fir use kr lo binding ke through-->
+<p>{{siteUrl}}</p>

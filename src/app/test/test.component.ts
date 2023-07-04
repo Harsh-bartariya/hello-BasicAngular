@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent {
-
+public name = "From Test component.ts";
+public siteUrl = window.location.href;
+greetUser(){
+  return "Hello "+ this.name;
 }
+}
+
