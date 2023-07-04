@@ -37,16 +37,4 @@ Modules interact and ultimately render the view in the browser
 ## work flow
 package.json contains dependencies and dev dependencies which required
 from here only modules installed in node modules
-
-Main.ts file-- entry point to our angular application
-app.module--root module | app.component--root component
-
-ng serve --> main.ts -->  there bootstrapModule(AppModule) will kickstart the app module -->  bootstrap: [AppComponent] kickstart --> App component contains app.html + app.class[logic][.ts file]
-
-## Component
-component consist of three parts 
-[template]-->{view}[created using--HTML]
-[class]  --> {code}[Typescript | Data & methods]
-[Metadata] --> {Information}--to decide that wheahter its a angular component or just a regular class--> its defined using [Decorator] which is a feature in typescript
-[Decorator] is nothing but a function which provides info about the class attached to its.
-
+to install them type `npm install`
