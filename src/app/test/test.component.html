@@ -30,3 +30,24 @@ Attribute vs Property
 3. Attributes initialize DOM properties and then they are done. Attribute values cannot changed once they are initiated.
 4. Property values however can change
 for above example value= Angular Basic is Attribute which initiated its value later on the UI if you change that called Property value -->
+
+<input [id] = "myID" type="text" value="Property binding"> <!-- if you go to console to this element id will be shown as TestID
+This is called Property binding, we are binding that from test.ts file to template through variable
+same we can achieve through interpolation, that is also fetching data from test.ts -->
+<input id = "{{myID}}" type="text" value="Property binding"> <!--  we can see abi bhi yha pe shi value show hoke dikhwgi 
+its called interpolation-->
+
+<input disabled id = "{{myID}}" type="text" value="Property binding">
+<!-- if we set our disabled tag to falso dene pr so it shuld be able to edit and enter values 
+interpolation has its own limitation, such as boolean, this interpolation can only use string opeatiions -->
+<input disabled="false" id = "{{myID}}" type="text" value="Property binding">
+<!-- we have done interpolation, setting value to false not working even in double curly Basic or in double quotes| still avaianble on UI -->
+<input [disabled]="false" id = "{{myID}}" type="text" value="Property-binding">
+<!-- so the solution here is to use Property binding --<> in this just declare 1 variable name and pass the arguement, or variable from ts file-->
+<input [disabled]=isDisabled id = "{{myID}}" type="text" value="Prop-bindig Ts file se">
+<!--yha data ts file se le rha h
+   there is an alternate syntax also for property binding which is== remove square bracks"bind -" -->
+   <input bind-disabled=isDisabled id = "{{myID}}" type="text" value="Bind hyphon">
+
+   
+

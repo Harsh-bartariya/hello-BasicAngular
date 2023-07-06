@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class TestComponent {
 public name = "From Test component.ts";
 public siteUrl = window.location.href;
+public myID = "TestId";
+public isDisabled = true;
 greetUser(){
   return "Hello "+ this.name;
 }
