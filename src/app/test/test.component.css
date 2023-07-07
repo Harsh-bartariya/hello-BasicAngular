@@ -1,0 +1,9 @@
+.text-success{
+    color: green;
+}
+.text-danger{
+     color: green; /* for class binding purpose we are making class here */
+}
+.text-special{
+    font-style: italic;
+}

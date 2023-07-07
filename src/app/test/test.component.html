@@ -49,5 +49,22 @@ interpolation has its own limitation, such as boolean, this interpolation can on
    there is an alternate syntax also for property binding which is== remove square bracks"bind -" -->
    <input bind-disabled=isDisabled id = "{{myID}}" type="text" value="Bind hyphon">
 
-   
+   <h4 class="text-success">Regular css class ke jaise print</h4>
+
+   <h4 [class] = "successClass">class binding ke through, sqr bracket syntax</h4>
+   <!-- but what happened if we give class binding and html Attribute in a same line, just see -->
+
+   <h4 class="text-special" [class] = "successClass">class binding hi chlegi, html attribute bekar h agr dono die to</h4>
+<!-- if both are present class binding will only work -->
+
+<!-- there is one more syntax to declar class binding, in which apply a class based on a expression that evaluates to be true or false -->
+
+<h4 [class.text-danger]="hasError">hasError me kya value h uske behalf pe print hogi : true h to red</h4>
+<h4 [class.text-danger]="false">hasError me kya value h uske behalf pe print hogi : false h to normal black</h4>
+<!-- has error me phle se true tha to hmne directly false assign kr dia wo bhi kr skte hai -->
+
+<!-- this work when we applied single class, to apply multiple class angular provides " ng-directives " 
+A directive is nothing but a custom html attribute that angular provide -->
+
+<h4 [ngClass]="messageClasses">Ng directive ke use se multiple class ka use krna</h4>
 
